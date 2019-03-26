@@ -110,8 +110,10 @@ label.checkbox {
 textarea {
   min-height: 50px;
 }
-
-
+@media screen and (max-width: 701px) {
+#form-body {
+  max-width: 90%;
+}
 @media screen and (max-width: 572px) {
   .radio-input {
    width: 100%;
