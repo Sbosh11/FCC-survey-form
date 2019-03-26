@@ -1,0 +1,131 @@
+body,
+html {
+  text-align: center;
+  background: #fff0f2;
+}
+
+h1 {
+  margin-bottom: 0;
+
+}
+
+p {
+  margin-top: 5px;
+}
+
+
+#form-body {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #efe5e3;
+  padding: 20px;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.box1 {
+  display: flex;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+label,
+input,
+select,
+.radio-input,
+.check-input,
+textarea,
+button {
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+label {
+  text-align: right;
+
+}
+
+input:required+label:before {
+  content: " * ";
+  color: red;
+}
+
+.radio-input {
+  display: -webkit-inline-box;
+  display: -moz-inlne-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+
+}
+
+.check-input {
+  list-style: none;
+  text-align: left;
+  height: fit-content;
+
+}
+
+
+
+
+label.checkbox {
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 0;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+
+
+textarea {
+  min-height: 50px;
+}
+
+
+@media screen and (max-width: 572px) {
+  .radio-input {
+   width: 100%;
+  }
+
+  .box-radio,
+  input.radio-input,
+  label.radio {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+
+
+
+}
